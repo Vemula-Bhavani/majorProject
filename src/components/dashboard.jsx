@@ -14,7 +14,7 @@ import { FaSearch, FaEye, FaTachometerAlt } from "react-icons/fa";
 export default function Dashboard() {
   const [data, setData] = useState(null);
   const [search, setSearch] = useState("");
-  const [time, setTime] = useState(new Date()); // ✅ ADDED
+  const [time, setTime] = useState(new Date());
 
   // 📍 Get location
   useEffect(() => {
@@ -23,7 +23,7 @@ export default function Dashboard() {
     });
   }, []);
 
-  // ⏰ Live Time (NEW)
+  // ⏰ Live Time
   useEffect(() => {
     const interval = setInterval(() => {
       setTime(new Date());
@@ -67,7 +67,7 @@ export default function Dashboard() {
           />
           <button
             onClick={() => fetchData(null, null, search)}
-            className="px-6 bg-orange-500 hover:bg-orange-600"
+            className="px-6 bg-red-500 hover:bg-red-600"
           >
             <FaSearch />
           </button>
@@ -77,7 +77,7 @@ export default function Dashboard() {
       {/* 🌤 TOP SECTION */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-10">
 
-        {/* LEFT MAIN WEATHER */}
+        {/* LEFT WEATHER */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
@@ -95,12 +95,10 @@ export default function Dashboard() {
                 {data.description}
               </p>
 
-              {/* ✅ DATE */}
               <p className="text-gray-400 mt-2">
                 📅 {time.toLocaleDateString()}
               </p>
 
-              {/* ✅ TIME */}
               <p className="text-gray-400">
                 ⏰ {time.toLocaleTimeString()}
               </p>
@@ -117,7 +115,7 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {/* 📆 FORECAST SECTION */}
+      {/* 📆 FORECAST */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-10">
 
         {/* 5 DAYS */}
@@ -135,7 +133,7 @@ export default function Dashboard() {
           ))}
         </motion.div>
 
-        {/* TODAY HOURLY */}
+        {/* TODAY */}
         <motion.div className="bg-white/10 p-6 rounded-2xl">
           <h3 className="text-xl mb-4">Today</h3>
           <div className="flex gap-4 overflow-x-auto">
@@ -187,14 +185,14 @@ export default function Dashboard() {
   );
 }
 
-// 🔥 BIG ANIMATED CARD
+// 🔥 METRIC CARD
 function MetricCard({ icon, title, value }) {
   return (
     <motion.div
       whileHover={{ scale: 1.07 }}
       className="bg-white/10 backdrop-blur-md p-6 rounded-2xl text-center shadow-lg"
     >
-      <div className="text-5xl text-orange-400 mb-3 animate-pulse">
+      <div className="text-5xl text-red-400 mb-3 animate-pulse">
         {icon}
       </div>
       <p className="text-gray-400">{title}</p>

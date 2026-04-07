@@ -60,11 +60,11 @@ export default function FloodMap() {
 
             {/* 🔴 HIGH RISK */}
             <CircleMarker
-              center={[19.076, 72.8777]}
+              center={[8.5241, 76.9366]}
               radius={20}
               pathOptions={{ color: "#ef4444", fillOpacity: 0.7 }}
             >
-              <Popup>🔴 Mumbai - High Risk</Popup>
+              <Popup>🔴 Kerala - High Risk</Popup>
             </CircleMarker>
 
             {/* 🟡 MODERATE */}
@@ -78,11 +78,11 @@ export default function FloodMap() {
 
             {/* 🔴 HIGH */}
             <CircleMarker
-              center={[25.5941, 85.1376]}
+              center={[17.366, 78.4767]}
               radius={20}
-              pathOptions={{ color: "#ef4444", fillOpacity: 0.7 }}
+              pathOptions={{ color: "#10712f", fillOpacity: 0.7 }}
             >
-              <Popup>🔴 Patna - High Risk</Popup>
+              <Popup>🟢 Hyderabad - Low Risk</Popup>
             </CircleMarker>
           </MapContainer>
         </div>

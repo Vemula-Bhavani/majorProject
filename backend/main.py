@@ -1,7 +1,9 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from datetime import datetime
 import requests
 import random
+import json
 
 app = FastAPI()
 
@@ -119,3 +121,10 @@ def get_dashboard_data(city: str = None, lat: float = None, lon: float = None):
         "images": images[:6],
         "reports": reports[:6]
     }
+
+@app.get("/previous-floods")
+def get_previous_floods():
+    with open("data/flood_data.json", "r") as file:
+        data = json.load(file)
+
+    return data

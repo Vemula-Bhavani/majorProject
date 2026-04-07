@@ -1,0 +1,62 @@
+[
+  {
+    "state": "Uttarakhand",
+    "year": "2013",
+    "severity": 95,
+    "description": "Kedarnath floods caused massive destruction due to cloudburst and heavy rainfall."
+  },
+  {
+    "state": "Tamil Nadu",
+    "year": "2015",
+    "severity": 88,
+    "description": "Chennai floods disrupted urban life due to continuous heavy rainfall."
+  },
+  {
+    "state": "Gujarat",
+    "year": "2017",
+    "severity": 75,
+    "description": "Flooding impacted Banaskantha region due to heavy rains."
+  },
+  {
+    "state": "Kerala",
+    "year": "2018",
+    "severity": 100,
+    "description": "Worst floods in a century affecting all districts of Kerala."
+  },
+  {
+    "state": "Bihar",
+    "year": "2019",
+    "severity": 82,
+    "description": "River overflow caused severe flooding in northern Bihar."
+  },
+  {
+    "state": "Karnataka",
+    "year": "2019",
+    "severity": 78,
+    "description": "Floods affected Belagavi and surrounding regions."
+  },
+  {
+    "state": "Assam",
+    "year": "2020",
+    "severity": 85,
+    "description": "Annual Brahmaputra floods affected millions."
+  },
+  {
+    "state": "Maharashtra",
+    "year": "2021",
+    "severity": 90,
+    "description": "Heavy rainfall caused floods in Mumbai and Kolhapur."
+  },
+  {
+    "state": "West Bengal",
+    "year": "2021",
+    "severity": 80,
+    "description": "Cyclone Yaas caused flooding in coastal districts."
+  },
+  {
+    "state": "Andhra Pradesh",
+    "year": "2022",
+    "severity": 77,
+    "description": "Heavy rains caused flooding in low-lying areas."
+  }
+]
